@@ -13,7 +13,7 @@ pipeline {
 		stage('Build'){
 			steps{
 				echo 'node.js and npm version'
-				sh 'nodejs --version'
+//				sh 'nodejs --version'
 				sh 'npm --version'
 				sh 'npm install'
 			}
