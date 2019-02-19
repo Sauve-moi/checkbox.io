@@ -1,5 +1,5 @@
 pipeline {
-    agnet any
+    agent any
     
     tools {
         nodejs "Nodejs10"
