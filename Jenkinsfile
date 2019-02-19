@@ -12,7 +12,7 @@ pipeline {
 	stages{
 		stage('Build'){
 			steps{
-				dir('/var/lib/jenkins/workspace/checkbox.io/server-side/site')
+				dir('/Users/Shared/Jenkins/Home/workspace/checkbox.io/server-side/site')
 				{
 					echo 'node.js and npm version'
 	//				sh 'nodejs --version'
@@ -26,7 +26,7 @@ pipeline {
 		}
 		stage('test'){
 			steps{
-				dir('/var/lib/jenkins/workspace/checkbox.io/server-side/site')
+				dir('/Users/Shared/Jenkins/Home/workspace/checkbox.io/server-side/site')
 				{
 					sh 'npm test'
 				}
