@@ -2,7 +2,7 @@ pipeline {
 	agent any
 
 	tools{
-		Nodejs10
+		nodejs "Nodejs10"	
 	}
 
 //	node {
