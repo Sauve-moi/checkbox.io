@@ -1,14 +1,17 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:6-alpine' 
-            args '-p 3000:3000' 
-        }
+    agnet any
+    
+    tools {
+        nodejs "Nodejs10"
+        jdk "jdk8"
     }
+    
     stages {
-        stage('Build') { 
+        stage('Demo') { 
             steps {
-                sh 'npm install' 
+                echo "check npm && java version"
+                sh 'npm --version'
+                sh ‘java -version’
             }
         }
     }
