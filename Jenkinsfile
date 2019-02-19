@@ -1,6 +1,11 @@
 pipeline {
 	agent any
 
+	tools{
+		nodejs 'v10.15.1'
+		npm '6.4.1'
+	}
+
 //	node {
 //		checkout scm
 //	}
@@ -8,6 +13,9 @@ pipeline {
 	stages{
 		stage('Build'){
 			steps{
+				echo 'node.js and npm version'
+				sh 'nodejs --version'
+				sh 'npm --version'
 				sh 'npm install'
 			}
 
