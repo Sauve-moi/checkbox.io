@@ -15,7 +15,7 @@ pipeline {
 				echo 'node.js and npm version'
 //				sh 'nodejs --version'
 				sh 'npm --version'
-				sh 'cd server-side/site'
+				sh "cd $workspace/server-side/site"
 				sh 'npm install'
 			}
 
